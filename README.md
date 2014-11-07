@@ -1,14 +1,11 @@
 # Android box
 
-The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the Android toolchain:
+The `rockerhieu/android` box runs on ubuntu 12.04 and provides a selection of the Android toolchain:
 
-* gradle 2.1
+* gradle 1.12
 * android sdk version 23.0.2
-* android build tools 18.0.1, 19.0.3, 19.1 and 20
-* android API 18 (android 4.3) and 19 (android 4.4)
-* sys image 19 (emulators)
-* android support library
-* google play service repository
+* android build tools 20.0.0
+* android API 20 (android L)
 
 The box also inherits tools from a not yet official java box, resulting in the following additional tools:
 
@@ -19,7 +16,7 @@ The box also inherits tools from a not yet official java box, resulting in the f
 A typical android application can use the following yaml:
 
 ``` yaml
-box: wercker/android
+box: rockerhieu/android
 # Build definition
 build:
   # The steps that will be executed on build
@@ -60,13 +57,13 @@ There are a number of environment varaibles declared for your information:
 
 The MIT License (MIT)
 
-Copyright (c) 2013 wercker
+Copyright (c) 2014 rocker
 
 # Changelog
 
-## 1.0.7
+## mychat-1.0
 
-* upgraded android sdk version to 23.0.5
+* upgraded specs to compatible with `squar/mychat-android`
 
 ## 1.0.6
 

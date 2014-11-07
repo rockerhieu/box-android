@@ -14,23 +14,10 @@ export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
 
 type android || { echo "Path: $PATH"; echo 'Android not availble after installation, terminating.'; exit 1; }
 
-export ANDROID_BUILD_TOOLS="20"
-export ANDROID_VERSION="4.4W"
-source $WERCKER_SOURCE_DIR/install-build-tools.sh
-export ANDROID_BUILD_TOOLS="19.1"
-export ANDROID_VERSION="4.4.2"
-source $WERCKER_SOURCE_DIR/install-build-tools.sh
-export ANDROID_BUILD_TOOLS="19.0.3"
-export ANDROID_VERSION="4.4.2"
-source $WERCKER_SOURCE_DIR/install-build-tools.sh
-export ANDROID_BUILD_TOOLS="18.0.1"
-export ANDROID_VERSION="4.3"
-source $WERCKER_SOURCE_DIR/install-build-tools.sh
-# export ANDROID_BUILD_TOOLS="17"
-# export ANDROID_VERSION="4.2.2"
-# source $WERCKER_SOURCE_DIR/install-build-tools.sh
+echo y | android update sdk --no-ui --all --filter "tools"
+echo y | android update sdk --no-ui --all --filter "build-tools-20.0.0"
 
-export ANDROID_BUILD_TOOLS="18.0.1,19.0.3,19.1,20"
+export ANDROID_BUILD_TOOLS="20.0.0"
 
 
 # Write environment variables setup to $profile
