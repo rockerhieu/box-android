@@ -61,7 +61,7 @@ Copyright (c) 2014 rocker
 
 # Changelog
 
-## mychat-1.0
+## 1.0.7
 
 * upgraded specs to compatible with `squar/mychat-android`
 
