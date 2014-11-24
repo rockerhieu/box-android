@@ -2,10 +2,11 @@
 
 The `rockerhieu/android` box runs on ubuntu 12.04 and provides a selection of the Android toolchain:
 
-* gradle 1.12
+* gradle 2.2
 * android sdk version 23.0.2
-* android build tools 20.0.0
+* android build tools 21.1.1
 * android API 20 (android L)
+* android API 21 (android 5.0)
 
 The box also inherits tools from a not yet official java box, resulting in the following additional tools:
 
@@ -60,6 +61,10 @@ The MIT License (MIT)
 Copyright (c) 2014 rocker
 
 # Changelog
+
+## 1.0.8
+
+* updated gradle to 2.2
 
 ## 1.0.7
 

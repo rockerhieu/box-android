@@ -15,9 +15,9 @@ export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
 type android || { echo "Path: $PATH"; echo 'Android not availble after installation, terminating.'; exit 1; }
 
 echo y | android update sdk --no-ui --all --filter "tools"
-echo y | android update sdk --no-ui --all --filter "build-tools-20.0.0"
+echo y | android update sdk --no-ui --all --filter "build-tools-21.1.1"
 
-export ANDROID_BUILD_TOOLS="20.0.0"
+export ANDROID_BUILD_TOOLS="21.1.1"
 
 
 # Write environment variables setup to $profile
